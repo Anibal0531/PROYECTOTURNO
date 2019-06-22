@@ -22,5 +22,10 @@ public class Asesor {
 	public void setTiempoasesoramiento(float tiempoasesoramiento) {
 		this.tiempoasesoramiento = tiempoasesoramiento;
 	}
-
+   public String insertasesor(String []args) {
+	   int cedula;
+	   
+	return null;
+	   
+   }
 }
