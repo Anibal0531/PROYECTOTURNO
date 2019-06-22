@@ -1,10 +1,16 @@
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.ManyToMany;
 
 @Entity
 public class DatoAsesor {
+	@Column
 	public Asesor serviciopresta;
+	@ManyToMany
 	public int size;
+	@Column
 	public boolean estadoasesor;
+	
 	public Asesor getServiciooresta() {
 		return serviciopresta;
 	}
