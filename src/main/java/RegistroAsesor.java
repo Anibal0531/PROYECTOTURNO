@@ -1,9 +1,14 @@
-
-
+import javax.persistence.Column;
+import javax.persistence.Entity;
+@Entity
 public class RegistroAsesor {
+	@Column
 	public String usuario;
+	@Column
 	public String tiempoatendido;
+	@Column
 	public TipoServicio servicioprestado;
+	@Column
 	public ListaPrioritaria prioridad;
 	
 	public String getUsuario() {
