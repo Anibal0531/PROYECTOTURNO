@@ -1,14 +1,15 @@
+import javax.persistence.Entity;
 
-
+@Entity
 public class DatoAsesor {
-	public Asesor serviciooresta;
+	public Asesor serviciopresta;
 	public int size;
 	public boolean estadoasesor;
 	public Asesor getServiciooresta() {
-		return serviciooresta;
+		return serviciopresta;
 	}
 	public void setServiciooresta(Asesor serviciooresta) {
-		this.serviciooresta = serviciooresta;
+		this.serviciopresta = serviciooresta;
 	}
 	public int getSize() {
 		return size;
