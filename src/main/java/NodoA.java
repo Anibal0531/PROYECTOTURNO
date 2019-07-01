@@ -15,8 +15,8 @@ public class NodoA {
 	public NodoA getNext() {
 		return next;
 	}
-	public void setNext(NodoA next) {
-		this.next = next;
+	public void setNext(Object newNode) {
+		this.next = (NodoA) newNode;
 	}
 	public Asesor getTamaño() {
 		return tamaño;
@@ -29,6 +29,10 @@ public class NodoA {
 	}
 	public void setHead(NodoA head) {
 		this.head = head;
+	}
+	public void setNext1(Object newNode) {
+		// TODO Auto-generated method stub
+		
 	}
 	
 
