@@ -103,6 +103,7 @@ public class Turno {
 		}
 	}
 	public String tiempollegada(String cedula) {
+		Turno tiempollegada = new Turno();
 		
 		return next;
 		
