@@ -102,5 +102,9 @@ public class Turno {
 			System.out.println(e);
 		}
 	}
-	
+	public String tiempollegada(String cedula) {
+		
+		return next;
+		
+	}
 }
