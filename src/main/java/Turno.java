@@ -22,6 +22,7 @@ public class Turno {
 	private Object tail;
 	public String next;
 	public String preview;
+	@Column
 	public String size;
 	
 	public Object getHead() {
