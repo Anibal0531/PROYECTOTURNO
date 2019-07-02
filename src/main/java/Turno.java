@@ -102,10 +102,16 @@ public class Turno {
 			System.out.println(e);
 		}
 	}
-	public String tiempollegada(String cedula) {
+	public Turno tiempollegada(String cedula) {
 		Turno tiempollegada = new Turno();
-		
-		return next;
-		
+		if(this.head == null) {
+			return tiempollegada;
+		}else {
+			if(this.head != null) {
+				this.head = this.cedula;
+				this.cedula = this.tiempollegada;
+			}
+		}
+		return tiempollegada;
 	}
 }
