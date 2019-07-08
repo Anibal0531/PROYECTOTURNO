@@ -1,6 +1,5 @@
+package Modelo;
 
-import java.io.File;
-import java.io.FileWriter;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -80,38 +79,5 @@ public class Turno {
 		this.tipoprioridad = tipoprioridad;
 	}
    
-	public void add(String cedula, String tiempollegada,String tiposervicio, String tipoprioridad) {
-		NodoA newnode = new NodoA();
-		try {
-			File archivo = new File("lista de llegada.txt");
-			FileWriter writer = new FileWriter(archivo);
-			if(archivo.exists()) {
-				if(this.head==null) {
-					   this.head=newnode;
-					   this.tail=newnode;
-				   }
-				   else
-				   {
-					   ((NodoA) this.tail).setNext(newnode);
-					   this.tail=newnode;
-				   }
-				   this.size = this.size+1;
-			}
-			writer.close();
-		}catch (Exception e) {
-			System.out.println(e);
-		}
-	}
-	public Turno tiempollegada(String cedula) {
-		Turno tiempollegada = new Turno();
-		if(this.head == null) {
-			return tiempollegada;
-		}else {
-			if(this.head != null) {
-				this.head = this.cedula;
-				this.cedula = this.tiempollegada;
-			}
-		}
-		return tiempollegada;
-	}
+	
 }

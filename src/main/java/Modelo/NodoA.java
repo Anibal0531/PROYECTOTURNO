@@ -1,15 +1,16 @@
+package Modelo;
 
 
 public class NodoA {
-	public Asesor asesor;
+	public AsesorVo asesor;
 	public NodoA next;
-	public Asesor tamaño;
+	public AsesorVo tamaño;
 	public NodoA head;
 	
-	public Asesor getAsesor() {
+	public AsesorVo getAsesor() {
 		return asesor;
 	}
-	public void setAsesor(Asesor asesor) {
+	public void setAsesor(AsesorVo asesor) {
 		this.asesor = asesor;
 	}
 	public NodoA getNext() {
@@ -18,10 +19,10 @@ public class NodoA {
 	public void setNext(Object newNode) {
 		this.next = (NodoA) newNode;
 	}
-	public Asesor getTamaño() {
+	public AsesorVo getTamaño() {
 		return tamaño;
 	}
-	public void setTamaño(Asesor tamaño) {
+	public void setTamaño(AsesorVo tamaño) {
 		this.tamaño = tamaño;
 	}
 	public NodoA getHead() {

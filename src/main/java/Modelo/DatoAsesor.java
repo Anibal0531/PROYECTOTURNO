@@ -1,3 +1,4 @@
+package Modelo;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.ManyToMany;
@@ -5,16 +6,16 @@ import javax.persistence.ManyToMany;
 @Entity
 public class DatoAsesor {
 	@Column
-	public Asesor serviciopresta;
+	public AsesorVo serviciopresta;
 	@ManyToMany
 	public int size;
 	@Column
 	public boolean estadoasesor;
 	
-	public Asesor getServiciooresta() {
+	public AsesorVo getServiciooresta() {
 		return serviciopresta;
 	}
-	public void setServiciooresta(Asesor serviciooresta) {
+	public void setServiciooresta(AsesorVo serviciooresta) {
 		this.serviciopresta = serviciooresta;
 	}
 	public int getSize() {

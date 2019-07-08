@@ -1,4 +1,4 @@
-import Turnero.ListaPrioritaria;
+package Modelo;
 
 public class Nodo {
 	public ListaPrioritaria lista;

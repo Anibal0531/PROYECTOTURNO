@@ -1,12 +1,10 @@
+package Modelo;
+
 import javax.persistence.Column;
-import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
-
-@Entity
-public class Asesor {
-	
+public class AsesorVo {
 	int size;
 	public int getSize() {
 		return size;
@@ -63,7 +61,7 @@ public class Asesor {
 
 
 
-public Asesor getCedula() {
+public AsesorVo getCedula() {
 		return null;
 	}
 
@@ -117,7 +115,7 @@ public Asesor getCedula() {
 
 
 
-public Asesor(String cedula, String nombre, TipoServicio servicio, DatoAsesor estado, float tiempoasesoramiento,
+public AsesorVo(String cedula, String nombre, TipoServicio servicio, DatoAsesor estado, float tiempoasesoramiento,
 			NodoA next) {
 		super();
 		this.cedula = cedula;
@@ -142,4 +140,5 @@ public String insertasesor(String nombre) {
 	return newasesor;
    
    }
+
 }
