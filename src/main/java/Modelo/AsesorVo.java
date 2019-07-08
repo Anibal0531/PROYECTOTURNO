@@ -115,8 +115,7 @@ public AsesorVo getCedula() {
 
 
 
-public AsesorVo(String cedula, String nombre, TipoServicio servicio, DatoAsesor estado, float tiempoasesoramiento,
-			NodoA next) {
+public AsesorVo() {
 		super();
 		this.cedula = cedula;
 		this.nombre = nombre;

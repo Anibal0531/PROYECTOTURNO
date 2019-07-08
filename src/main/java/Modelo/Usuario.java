@@ -3,7 +3,8 @@ package Modelo;
 public class Usuario {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		 AsesorVo insertasesor = new AsesorVo();
+	     insertasesor.next.head.getHead();
 
 	}
 
